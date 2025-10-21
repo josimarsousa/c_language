@@ -1,12 +1,15 @@
 /*pegando nome com scanf*/
+#include <stdio.h>
+
 
 int main(){
 
     char name[30];
-    int age[3];
 
-    printf("Hello, What is your name?");
-    scanf();
+    printf("Hello, What is your name?\n");
+    scanf("%s", name);
+
+    printf("Hello %s\n", name);
 
     return 0;
 }

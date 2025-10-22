@@ -1,4 +1,12 @@
 /* numbers.c */
+
+/* 
+
+    %s a string of chars
+    %d a integer 
+
+*/
+
 #include <stdio.h>
 
 int main() {

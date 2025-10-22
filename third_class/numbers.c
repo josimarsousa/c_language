@@ -11,14 +11,19 @@
 
 int main() {
 
-    int x, y;
+    int x, y, result;
 
     printf("Please input a number: \n");
-    scanf("%d", x);
+    scanf("%d", &x);
 
     printf("Please input another number: \n");
-    scanf("%d", y);
+    scanf("%d", &y);
 
+    printf("the numbers typed are: %d %d\n", x,  y);
+
+    result = x + y;
+
+    printf("the result of the sum is: %d\n", result);
 
     return 0;
 

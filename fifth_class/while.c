@@ -4,17 +4,21 @@
 
 int main() {
 
-    int x;
+    int x = 0;
 
     // while
     //do 
     
-    while(1){
+    while(x ){
         printf("Do you wish to quit? Press 1. \n");
         scanf("%d", &x);
-        if(x == 1){
-           return 0;
+        if(x != 0){
+           printf("O sistema foi encerrado!");
+           break;
+
         }
+         printf("important! the system running");
+         return 0;
     } 
-    return 0;
+   
 }

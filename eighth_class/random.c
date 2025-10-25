@@ -2,12 +2,14 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <sys/types.h>
+#include <unistd.h>
 
-int our_random_function(){
+int our_random_function(int max){
     
     int x;
 
-    x = rand();
+    x = rand() % max + 1;
     return x;
 
 }
@@ -16,10 +18,14 @@ int main(){
 
     int random;
 
-    random = our_random_function();
+    //printf("%d\n", getpid());
+    //return 0;
+
+    srand(getpid());
+    random = our_random_function(5);
     printf("%d\n", random);
 
-    random = our_random_function();
+    random = our_random_function(10);
     printf("%d\n", random);
 
     return 0;

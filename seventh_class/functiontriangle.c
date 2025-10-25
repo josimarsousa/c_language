@@ -15,11 +15,11 @@ int main (){
     int b, h, a;
 
     printf("Base: ");
-    fflush(stdout);
+    //fflush(stdout);
     scanf("%d", &b);
 
     printf("Height: ");
-    fflush(stdout);
+    //fflush(stdout);
     scanf("%d", &h);
 
     a = area_triangle(b, h);

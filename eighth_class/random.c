@@ -19,6 +19,9 @@ int main(){
     random = our_random_function();
     printf("%d\n", random);
 
+    random = our_random_function();
+    printf("%d\n", random);
+
     return 0;
     
 }

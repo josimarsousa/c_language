@@ -13,11 +13,11 @@ int main(){
     {
       printf("%d\n", number);
       sleep(1);
-      number = number -1;
+      number -= 1;
 
-      if(number < 1){
+      if(number < 1)
         break;
-      }
+      
     }
     
     return 0;

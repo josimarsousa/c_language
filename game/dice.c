@@ -5,7 +5,7 @@
 #include <stdlib.h>
 
 
-int ramdom(int max){
+int myRandom(int max){
     int x = rand() % max +1;
 
     return x;

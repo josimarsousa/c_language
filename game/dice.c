@@ -29,9 +29,27 @@ int main() {
     if(guess == 0)
     return 0;
 
+    printf("Throwing the dice...\n");
     sleep(2);
     dice = myRandom(6);
-    printf("%d\n", dice);
+    printf("Dice results %d\n", dice);
+
+    if(guess != dice){
+        balance -= bet;
+        printf("Sorry, you lost!\n");
+    } else {
+        bet *= 3;
+        balance += bet;
+        printf("You won - congratulations!\n");
+    }
+
+    if(balance == 0){
+        printf("GAME OVER\n");
+        return 0;
+    }
+
+
+
 
     return 0;
 

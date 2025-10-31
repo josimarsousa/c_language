@@ -19,6 +19,9 @@ int main() {
     srand(getpid());
 
     balance = 1000;
+
+  while (1){
+    
     printf("Make your bet: ");
     fflush(stdout);
     scanf("%d", &bet);
@@ -32,7 +35,7 @@ int main() {
     printf("Throwing the dice...\n");
     sleep(2);
     dice = myRandom(6);
-    printf("Dice results %d\n", dice);
+    printf("Dice results: %d\n", dice);
 
     if(guess != dice){
         balance -= bet;
@@ -48,7 +51,9 @@ int main() {
         return 0;
     }
 
+    printf("Balance : $%d\n", balance);
 
+  }
 
 
     return 0;
